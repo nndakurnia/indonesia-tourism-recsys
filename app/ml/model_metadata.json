@@ -1,0 +1,48 @@
+{
+  "model_info": {
+    "name": "XGBoost",
+    "version": "1.0.0",
+    "created_date": "2025-08-07 14:10:07",
+    "performance": {
+      "test_r2": 0.9990687370300293,
+      "test_rmse": 0.04179343327496678
+    }
+  },
+  "data_info": {
+    "train_samples": 8120,
+    "test_samples": 1880,
+    "features_count": 31,
+    "target_range": [
+      1.0,
+      5.0
+    ]
+  },
+  "preprocessing": {
+    "scaler_type": "StandardScaler",
+    "encoded_features": [
+      "Category",
+      "City",
+      "price_category",
+      "age_group",
+      "province",
+      "Location"
+    ],
+    "numerical_features": [
+      "Age",
+      "Price_Numeric",
+      "Rating",
+      "Time_Minutes",
+      "user_avg_rating",
+      "user_rating_std",
+      "user_total_ratings",
+      "place_avg_rating",
+      "place_rating_std",
+      "place_total_ratings",
+      "rating_vs_user_avg",
+      "rating_vs_place_avg",
+      "rating_surprise",
+      "popularity_score",
+      "time_value_ratio"
+    ]
+  }
+}
