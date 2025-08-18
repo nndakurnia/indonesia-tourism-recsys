@@ -1,0 +1,19 @@
+services:
+  recsys-api:
+    build: .
+    container_name: recsys-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.api
+    networks:
+      - internal
+      - public
+    depends_on:
+      - db
+
+networks:
+  internal:
+    external: true
+  public:
+    external: true
